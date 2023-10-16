@@ -10,7 +10,7 @@ const cors = require('cors')
 
 
 
-const allowedOrigins = ['http://localhost:3000']
+const allowedOrigins = ['https://nikhil-71qs.onrender.com']
 
 app.use(cors({
     origin:function (origin,callback)
@@ -26,7 +26,7 @@ app.use(cors({
          }
      },
      
-     methods: ['GET', 'POST', 'PUT'],
+     methods: ['GET', 'POST', 'PUT','HEAD','OPTIONS'],
      
     
   })) 
